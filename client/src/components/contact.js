@@ -15,6 +15,11 @@ const Contact = () => {
             alt="JKeenan Logo"
             width="300"
             height="250"
+            style={{
+              display: "block",
+              marginLeft: "auto",
+              marginRight: "auto",
+            }}
           />
         </Link>
       </section>
