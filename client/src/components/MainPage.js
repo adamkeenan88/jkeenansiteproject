@@ -52,11 +52,16 @@ const Main = () => {
           </div>
         </div>
       </div>
-
-      {/* <DisplayAllPets
-      formSubmittedBoolean={formSubmittedBoolean}
-      setFormSubmittedBoolean={setFormSubmittedBoolean}
-    /> */}
+      <div class="columns is-multiline is-mobile">
+        <div class="column is-half">
+          <p class="content is-large">
+            <strong>Hi! I'm Jessica...</strong>
+          </p>
+        </div>
+        <div class="column is-half">
+          <img src="#" />
+        </div>
+      </div>
     </div>
   );
 };

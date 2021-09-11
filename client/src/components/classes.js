@@ -3,6 +3,7 @@ import { Link } from "@reach/router";
 import jkeenan from "./jkeenanlogo.jpeg";
 import "bulma/css/bulma.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const Classes = () => {
   return (
     <div>
@@ -51,6 +52,93 @@ const Classes = () => {
           </div>
         </div>
       </div>
+      <section>
+        <h1 style={{ textAlign: "left", fontWeight: "bold", fontSize: "40px" }}>
+          Available Classes
+        </h1>
+        <article class="media">
+          <figure class="media-left">
+            <p class="image is-64x64">
+              <img class="is-rounded" src="#" />
+            </p>
+          </figure>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong>
+                  Navigating Newborns: Tummy Time, Feeding, and Colic Oh My!
+                </strong>
+                <small>BDI Playhouse</small>
+                <br></br>
+                Buckle up and BYOM (Bring Your Own Milk). Parenthood is anything
+                but a straight and simple drive! In Navigating Newborns, our
+                pediatric therapists will share all of their top tips that will
+                allow you to conquer any speed bumps, roadblocks, or detours you
+                may experience with your baby (from the comfort of your home).
+                This 4 part live virtual class will offer a safe space to ask
+                any and all questions pertaining to your infant’s development
+                while demonstrating hands-on activities to help your baby be
+                their best!
+                <br></br>
+                <a href="https://bdiplayhouse.com/parent-child-classes/">
+                  Click here to read more and sign up today!
+                </a>
+              </p>
+            </div>
+          </div>
+        </article>
+        <hr></hr>
+        <article class="media">
+          <figure class="media-left">
+            <p class="image is-64x64">
+              <img
+                class="is-rounded"
+                src="https://bulma.io/images/placeholders/128x128.png"
+              />
+            </p>
+          </figure>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong>Talk and Groove</strong> <small>BDI Playhouse</small>
+                <br></br>
+                Ages: 1 to 3 Years This movement and language group is designed
+                to enhance development for the toddler and preschool aged child.
+                Parents will learn practical strategies to help their child
+                learn language naturally throughout the day.
+                <br></br>
+                <a href="https://bdiplayhouse.com/parent-child-classes/">
+                  Click here to read more and sign up today!
+                </a>
+              </p>
+            </div>
+          </div>
+        </article>
+        <hr></hr>
+        <article class="media">
+          <figure class="media-left">
+            <p class="image is-64x64">
+              <img class="is-rounded" src="#" />
+            </p>
+          </figure>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong>Language Development in Children</strong>
+                <small>BDI Playhouse</small>
+                <br></br>
+                Learn How to Prepare your Family to Support a Successful
+                Breastfeeding Experience!
+                <br></br>
+                <a href="https://bdiplayhouse.com/parent-child-classes/">
+                  Click here to read more and sign up today!
+                </a>
+              </p>
+            </div>
+          </div>
+        </article>
+        <hr></hr>
+      </section>
     </div>
   );
 };

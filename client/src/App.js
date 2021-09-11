@@ -21,9 +21,6 @@ function App() {
         <Classes path="/jessicakeenan/classes" />
         <Contact path="/jessicakeenan/contact" />
         <Reviews path="/jessicakeenan/reviews" />
-        {/* <NewPet path="/pet/new" />
-        <EditPet path="/pet/:petId/edit" />
-        <DisplayOnePet path="/pet/:petId" /> */}
       </Router>
     </div>
   );
