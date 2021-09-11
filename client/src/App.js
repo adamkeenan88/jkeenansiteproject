@@ -6,6 +6,7 @@ import Books from "./components/books";
 import Classes from "./components/classes";
 import Contact from "./components/contact";
 import Reviews from "./components/reviews";
+import Register from "./components/register";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 
@@ -21,6 +22,7 @@ function App() {
         <Classes path="/jessicakeenan/classes" />
         <Contact path="/jessicakeenan/contact" />
         <Reviews path="/jessicakeenan/reviews" />
+        <Register path="/jessicakeenan/register" />
       </Router>
     </div>
   );
