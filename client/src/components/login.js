@@ -1,33 +1,38 @@
-import React, { useState } from "react";
 import axios from "axios";
+import React, { useState } from "react";
 import { navigate, Link } from "@reach/router";
 import jkeenan from "./jkeenanlogo.jpeg";
 import "bulma/css/bulma.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Register = () => {
+const Login = () => {
+  // declare state vars
   const [email, setEmail] = useState("");
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
   const [password, setPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
   const [err, setErr] = useState("");
-  const handleSubmit = async (e) => {
+  const [successMsg, setSuccessMsg] = useState("");
+  const handleSubmit = (e) => {
     e.preventDefault();
-    const postData = {
-      firstName,
-      lastName,
-      email,
-      password,
-      confirmPassword,
-    };
-    try {
-      await axios.post("http://localhost:8000/api/register", postData);
-      navigate("/jessicakeenan/reviews");
-    } catch (err) {
-      console.log("error block", err.response);
-      setErr(err.response.data.err);
-    }
+    setErr("");
+    setSuccessMsg("");
+    const postData = { email, password };
+    axios
+      .post(
+        "http://localhost:8000/api/login",
+        postData,
+        {
+          withCredentials: true,
+        },
+        navigate("/jessicakeenan/reviews")
+      )
+      .then((response) => setSuccessMsg(response.data.message))
+      .catch((err) => setErr(err.response.data.err));
+  };
+  const handleLogout = () => {
+    axios
+      .post("http://localhost:8000/api/logout")
+      .then((response) => console.log(response))
+      .catch((err) => console.log(err));
   };
   return (
     <div>
@@ -77,32 +82,13 @@ const Register = () => {
         </div>
       </div>
       <form onSubmit={handleSubmit}>
-        <h1 class="content is-large">
-          <strong>Register To Leave A Review</strong>
+        <h1 class="content is-medium">
+          <strong>LOGIN</strong>
         </h1>
         {err && <h3 style={{ color: "red" }}>{err}</h3>}
-        <div class="field is-horizontal">
-          <label class="label">First Name: </label>
-          <div class="control">
-            <input
-              class="input is-normal"
-              type="text"
-              placeholder="John"
-              onChange={(e) => setFirstName(e.target.value)}
-            />
-          </div>
-        </div>
-        <div class="field is-horizontal">
-          <label class="label">Last Name: </label>
-          <div class="control">
-            <input
-              class="input is-normal"
-              type="text"
-              placeholder="Smith"
-              onChange={(e) => setLastName(e.target.value)}
-            />
-          </div>
-        </div>
+        {successMsg.length > 0 && (
+          <h3 style={{ color: "green" }}>{successMsg}</h3>
+        )}
         <div class="field is-horizontal">
           <label class="label">Email: </label>
           <div class="control">
@@ -120,25 +106,19 @@ const Register = () => {
             <input
               class="input is-normal"
               type="text"
-              placeholder="PassWord123!"
+              placeholder="password123!"
               onChange={(e) => setPassword(e.target.value)}
             />
           </div>
         </div>
-        <div class="field is-horizontal">
-          <label class="label">Confirm Password: </label>
-          <div class="control">
-            <input
-              class="input is-normal"
-              type="text"
-              placeholder="PassWord123!"
-              onChange={(e) => setConfirmPassword(e.target.value)}
-            />
-          </div>
-        </div>
-
         <button class="button is-link is-outlined is-rounded" type="submit">
           SUBMIT
+        </button>
+        <button
+          class="button is-link is-outlined is-rounded"
+          onClick={() => handleLogout()}
+        >
+          LOGOUT
         </button>
         <button class="button is-link is-outlined is-rounded">
           <Link to={"/jessicakeenan/reviews"}>Back to Reviews Page</Link>
@@ -148,4 +128,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default Login;

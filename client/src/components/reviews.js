@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "@reach/router";
 import jkeenan from "./jkeenanlogo.jpeg";
+import DisplayPost from "./displaypost";
 import "bulma/css/bulma.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -52,6 +53,24 @@ const Reviews = () => {
           </div>
         </div>
       </div>
+      <section>
+        <button class="button is-link is-outlined is-rounded">
+          <Link to={"/jessicakeenan/register"}>
+            Register to read or leave a review!
+          </Link>
+        </button>
+        <span>
+          <button class="button is-link is-outlined is-rounded">
+            <Link to={"/jessicakeenan/login"}>
+              Login to read or leave a review!
+            </Link>
+          </button>
+        </span>
+      </section>
+      <br></br>
+      <section>
+        <DisplayPost />
+      </section>
     </div>
   );
 };

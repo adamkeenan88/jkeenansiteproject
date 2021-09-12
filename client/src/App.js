@@ -7,6 +7,8 @@ import Classes from "./components/classes";
 import Contact from "./components/contact";
 import Reviews from "./components/reviews";
 import Register from "./components/register";
+import Login from "./components/login";
+import PostForm from "./components/postform";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 
@@ -23,6 +25,8 @@ function App() {
         <Contact path="/jessicakeenan/contact" />
         <Reviews path="/jessicakeenan/reviews" />
         <Register path="/jessicakeenan/register" />
+        <Login path="/jessicakeenan/login" />
+        <PostForm path="/jessicakeenan/post" />
       </Router>
     </div>
   );
