@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "@reach/router";
 import jkeenan from "./jkeenanlogo.jpeg";
+import contact from "./contactus.jpg";
 import "bulma/css/bulma.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -50,6 +51,31 @@ const Contact = () => {
               </a>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="columns is-multiline is-mobile is-vcentered">
+        <div class="column is-half">
+          <img src={contact} />
+        </div>
+        <div class="column is-half">
+          <p class="content is-large">
+            <strong>EMAIL:</strong>
+          </p>
+          <p class="content is-normal">braleyjessica@gmail.com</p>
+          <p class="content is-large">
+            <strong>LINKEDIN:</strong>
+            <p class="content is-normal">
+              <a href="https://www.linkedin.com/in/jessica-keenan-918937a3/">
+                Jessica Keenan LinkedIn Page
+              </a>
+            </p>
+            <p class="content is-large">
+              <strong>COMPANY PAGE:</strong>
+            </p>
+            <p class="content is-normal">
+              <a href="https://bdiplayhouse.com">BDI Playhouse Website</a>
+            </p>
+          </p>
         </div>
       </div>
     </div>

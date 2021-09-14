@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "@reach/router";
 import jkeenan from "./jkeenanlogo.jpeg";
 import babygiggle from "./henny_giggling.jpeg";
+import babyeating from "./babyeating.jpeg";
+import breastfeeding from "./breastfeeding.jpeg";
 import "bulma/css/bulma.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -57,10 +59,11 @@ const Blogs = () => {
         <h1 style={{ textAlign: "left", fontWeight: "bold", fontSize: "40px" }}>
           Blog Posts
         </h1>
+        <br></br>
         <article class="media">
           <figure class="media-left">
             <p class="image is-64x64">
-              <img class="is-rounded" src={babygiggle} />
+              <img class="is-rounded" src={babyeating} />
             </p>
           </figure>
           <div class="media-content">
@@ -82,10 +85,7 @@ const Blogs = () => {
         <article class="media">
           <figure class="media-left">
             <p class="image is-64x64">
-              <img
-                class="is-rounded"
-                src="https://bulma.io/images/placeholders/128x128.png"
-              />
+              <img class="is-rounded" src={breastfeeding} />
             </p>
           </figure>
           <div class="media-content">

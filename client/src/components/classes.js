@@ -56,12 +56,8 @@ const Classes = () => {
         <h1 style={{ textAlign: "left", fontWeight: "bold", fontSize: "40px" }}>
           Available Classes
         </h1>
+        <br></br>
         <article class="media">
-          <figure class="media-left">
-            <p class="image is-64x64">
-              <img class="is-rounded" src="#" />
-            </p>
-          </figure>
           <div class="media-content">
             <div class="content">
               <p>
@@ -89,14 +85,6 @@ const Classes = () => {
         </article>
         <hr></hr>
         <article class="media">
-          <figure class="media-left">
-            <p class="image is-64x64">
-              <img
-                class="is-rounded"
-                src="https://bulma.io/images/placeholders/128x128.png"
-              />
-            </p>
-          </figure>
           <div class="media-content">
             <div class="content">
               <p>
@@ -116,11 +104,6 @@ const Classes = () => {
         </article>
         <hr></hr>
         <article class="media">
-          <figure class="media-left">
-            <p class="image is-64x64">
-              <img class="is-rounded" src="#" />
-            </p>
-          </figure>
           <div class="media-content">
             <div class="content">
               <p>
