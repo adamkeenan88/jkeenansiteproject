@@ -88,16 +88,20 @@ const PostForm = () => {
               <p key={index}>{errors[objKey].message}</p>
             ))
           : null}
-        <div>
-          Title:{" "}
-          <input
-            type="text"
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
-          />
+        <div class="field is-horizontal">
+          <label class="label">Title: </label>
+          <div class="control">
+            <input
+              class="input is-normal"
+              type="text"
+              value={title}
+              placeholder="example"
+              onChange={(e) => setTitle(e.target.value)}
+            />
+          </div>
         </div>
         <div>
-          Post Text:{" "}
+          Post Text:
           <textarea
             id=""
             cols="30"
@@ -105,7 +109,12 @@ const PostForm = () => {
             rows="10"
             value={text}
           ></textarea>
-          <button type="submit">Add Post</button>
+          <button
+            class="button is-primary is-outlined is-rounded"
+            type="submit"
+          >
+            Add Post
+          </button>
         </div>
       </form>
     </div>
