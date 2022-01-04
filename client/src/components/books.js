@@ -9,7 +9,7 @@ const Books = () => {
   return (
     <div>
       <section classname="pageHeader">
-        <Link to="/jessicakeenan/">
+        <Link to="/">
           <img
             class="jklogo"
             src={jkeenan}
@@ -26,21 +26,23 @@ const Books = () => {
       </section>
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-          <Link to={"/jessicakeenan"} class="navbar-item">
-            <a class="button is-primary">Home</a>
+          <Link to={"/"} class="navbar-item">
+            <button type="" class="button is-primary">
+              Home
+            </button>
           </Link>
-          <Link to={"/jessicakeenan/blogs"} class="navbar-item">
-            <a class="button is-primary">Blogs</a>
+          <Link to={"/blogs"} class="navbar-item">
+            <button class="button is-primary">Blogs</button>
           </Link>
-          <Link to={"/jessicakeenan/classes"} class="navbar-item">
-            <a class="button is-primary">Classes</a>
+          <Link to={"/classes"} class="navbar-item">
+            <button class="button is-primary">Classes</button>
           </Link>
-          <Link to={"/jessicakeenan/contact"} class="navbar-item">
-            <a class="button is-primary">Contact Jessica</a>
+          <Link to={"/contact"} class="navbar-item">
+            <button class="button is-primary">Contact Jessica</button>
           </Link>
-          <Link to={"/jessicakeenan/reviews"} class="navbar-item">
-            <a class="button is-primary">Therapy Reviews</a>
-          </Link>
+          {/* <Link to={"/jessicakeenan/reviews"} class="navbar-item">
+            <button class="button is-primary">Therapy Reviews</button>
+          </Link> */}
         </div>
         <div class="navbar-end">
           <div class="navbar-item">
@@ -55,7 +57,7 @@ const Books = () => {
       </div>
       <div class="columns is-multiline is-mobile is-vcentered">
         <div class="column is-half">
-          <img src={bookcover} />
+          <img src={bookcover} alt="book cover" />
         </div>
         <div class="column is-half">
           <p class="title is-1">

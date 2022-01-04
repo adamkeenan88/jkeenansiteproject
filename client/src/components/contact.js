@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <div>
       <section classname="pageHeader">
-        <Link to="/jessicakeenan/">
+        <Link to="/">
           <img
             class="jklogo"
             src={jkeenan}
@@ -26,21 +26,21 @@ const Contact = () => {
       </section>
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-          <Link to={"/jessicakeenan"} class="navbar-item">
-            <a class="button is-primary">Home</a>
+          <Link to={"/"} class="navbar-item">
+            <button class="button is-primary">Home</button>
           </Link>
-          <Link to={"/jessicakeenan/blogs"} class="navbar-item">
-            <a class="button is-primary">Blogs</a>
+          <Link to={"/blogs"} class="navbar-item">
+            <button class="button is-primary">Blogs</button>
           </Link>
-          <Link to={"/jessicakeenan/books"} class="navbar-item">
-            <a class="button is-primary">Books</a>
+          <Link to={"/books"} class="navbar-item">
+            <button class="button is-primary">Books</button>
           </Link>
-          <Link to={"/jessicakeenan/classes"} class="navbar-item">
-            <a class="button is-primary">Classes</a>
+          <Link to={"/classes"} class="navbar-item">
+            <button class="button is-primary">Classes</button>
           </Link>
-          <Link to={"/jessicakeenan/reviews"} class="navbar-item">
-            <a class="button is-primary">Therapy Reviews</a>
-          </Link>
+          {/* <Link to={"/reviews"} class="navbar-item">
+            <button class="button is-primary">Therapy Reviews</button>
+          </Link> */}
         </div>
         <div class="navbar-end">
           <div class="navbar-item">
@@ -55,7 +55,7 @@ const Contact = () => {
       </div>
       <div class="columns is-multiline is-mobile is-vcentered">
         <div class="column is-half">
-          <img src={contact} />
+          <img src={contact} alt="contact icon" />
         </div>
         <div class="column is-half">
           <p class="content is-large">

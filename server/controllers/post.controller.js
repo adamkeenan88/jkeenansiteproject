@@ -11,8 +11,8 @@ const addNewPost = async (req, res) => {
   try {
     newPost = await newPost.save();
     res.json(newPost);
-  } catch (error) {
-    res.status(400).json(error);
+  } catch (err) {
+    res.status(400).json(err);
   }
 };
 
@@ -20,8 +20,8 @@ const getAllPosts = async (req, res) => {
   try {
     const allPosts = await Post.find()
       .populate({
-        path: "comments",
-        model: "Comment",
+        path: "posts",
+        model: "Post",
         populate: {
           path: "user_id",
           model: "User",
@@ -29,8 +29,8 @@ const getAllPosts = async (req, res) => {
       })
       .exec();
     res.json(allPosts);
-  } catch (error) {
-    res.status(400).json(error);
+  } catch (err) {
+    res.status(400).json(err);
   }
 };
 

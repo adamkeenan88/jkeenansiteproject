@@ -10,13 +10,10 @@ const PostSchema = mongoose.Schema(
       type: String,
       required: [true, "text is required"],
     },
-    // This is a ref to another collection
     user_id: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
     },
-    // embed comments belonging to that post inside post document
-    comments: [{ type: mongoose.Schema.Types.ObjectId, ref: "Post" }],
   },
   { timestamps: true }
 );

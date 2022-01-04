@@ -18,11 +18,11 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Main path="/jessicakeenan" />
-        <Blogs path="/jessicakeenan/blogs" />
-        <Books path="/jessicakeenan/books" />
-        <Classes path="/jessicakeenan/classes" />
-        <Contact path="/jessicakeenan/contact" />
+        <Main path="/" />
+        <Blogs path="/blogs" />
+        <Books path="/books" />
+        <Classes path="/classes" />
+        <Contact path="/contact" />
         {/* <Reviews path="/jessicakeenan/reviews" />
         <Register path="/jessicakeenan/register" />
         <Login path="/jessicakeenan/login" />

@@ -11,7 +11,7 @@ const Blogs = () => {
   return (
     <div>
       <section class="jklogo">
-        <Link to="/jessicakeenan/">
+        <Link to="/">
           <img
             class="jklogo"
             src={jkeenan}
@@ -28,21 +28,21 @@ const Blogs = () => {
       </section>
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-          <Link to={"/jessicakeenan"} class="navbar-item">
-            <a class="button is-primary">Home</a>
+          <Link to={"/"} class="navbar-item">
+            <button class="button is-primary">Home</button>
           </Link>
-          <Link to={"/jessicakeenan/books"} class="navbar-item">
-            <a class="button is-primary">Books</a>
+          <Link to={"/books"} class="navbar-item">
+            <button class="button is-primary">Books</button>
           </Link>
-          <Link to={"/jessicakeenan/classes"} class="navbar-item">
-            <a class="button is-primary">Classes</a>
+          <Link to={"/classes"} class="navbar-item">
+            <button class="button is-primary">Classes</button>
           </Link>
-          <Link to={"/jessicakeenan/contact"} class="navbar-item">
-            <a class="button is-primary">Contact Jessica</a>
+          <Link to={"/contact"} class="navbar-item">
+            <button class="button is-primary">Contact Jessica</button>
           </Link>
-          <Link to={"/jessicakeenan/reviews"} class="navbar-item">
-            <a class="button is-primary">Therapy Reviews</a>
-          </Link>
+          {/* <Link to={"/jessicakeenan/reviews"} class="navbar-item">
+            <button class="button is-primary">Therapy Reviews</button>
+          </Link> */}
         </div>
         <div class="navbar-end">
           <div class="navbar-item">
@@ -63,7 +63,7 @@ const Blogs = () => {
         <article class="media">
           <figure class="media-left">
             <p class="image is-64x64">
-              <img class="is-rounded" src={babyeating} />
+              <img class="is-rounded" src={babyeating} alt="baby eating" />
             </p>
           </figure>
           <div class="media-content">
@@ -85,7 +85,11 @@ const Blogs = () => {
         <article class="media">
           <figure class="media-left">
             <p class="image is-64x64">
-              <img class="is-rounded" src={breastfeeding} />
+              <img
+                class="is-rounded"
+                src={breastfeeding}
+                alt="breastfeeding mother"
+              />
             </p>
           </figure>
           <div class="media-content">
@@ -109,7 +113,7 @@ const Blogs = () => {
         <article class="media">
           <figure class="media-left">
             <p class="image is-64x64">
-              <img class="is-rounded" src={babygiggle} />
+              <img class="is-rounded" src={babygiggle} alt="baby laughing" />
             </p>
           </figure>
           <div class="media-content">

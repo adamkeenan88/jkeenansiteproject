@@ -3,13 +3,12 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
 const register = async (req, res, next) => {
-  // pull body off of req
   const { body } = req;
 
   try {
     const queriedUser = await User.findOne({ email: body.email });
     if (queriedUser) {
-      res.status(400).json({ error: "Email already in use" });
+      res.status(400).json({ err: "Email already in use" });
       return;
     }
   } catch (err) {
@@ -19,8 +18,8 @@ const register = async (req, res, next) => {
   try {
     const newUserObj = await newUser.save();
     res.json(newUserObj);
-  } catch (error) {
-    res.status(400).json(error);
+  } catch (err) {
+    res.status(400).json({ err: "Information Invalid" });
   }
 };
 
@@ -40,11 +39,11 @@ const login = async (req, res) => {
   const passwordCheck = bcrypt.compareSync(body.password, userQuery.password);
 
   if (!passwordCheck) {
-    res.status(400).json({ error: "email and password do not match" });
+    res.status(400).json({ err: "email and password do not match" });
     return;
   }
   const userToken = jwt.sign({ id: userQuery._id }, process.env.SECRET_KEY);
-  console.log("token:", userToken); // will print some insanely long, random string
+  console.log("token:", userToken);
 
   res
     .cookie("usertoken", userToken, process.env.SECRET_KEY, {
