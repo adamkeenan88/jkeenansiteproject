@@ -24,7 +24,7 @@ const Main = () => {
           />
         </Link>
       </section>
-      <div id="navbarBasicExample" class="navbar-menu is-flex-modile">
+      <div id="navbarBasicExample" class="navbar-brand is-flex-mobile">
         <div class="navbar-start">
           <Link to={"/blogs"} class="navbar-item">
             <button class="button is-primary">Blogs</button>
