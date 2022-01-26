@@ -46,6 +46,7 @@ const Blogs = () => {
                   role="button"
                   class="navbar-burger"
                   aria-label="menu"
+                  href
                   aria-expanded="false"
                   data-target="navbarBasicExample"
                 >
