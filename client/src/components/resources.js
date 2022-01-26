@@ -1,11 +1,10 @@
 import React from "react";
 import { Link } from "@reach/router";
 import bcover from "./COVER.png";
-import booktitlepage from "./HendrixHearsaSoundBookTitle.png";
 import "bulma/css/bulma.min.css";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Main = () => {
+const Resources = () => {
   return (
     <div>
       <article class="media">
@@ -23,14 +22,14 @@ const Main = () => {
           <div class="navbar-menu is-active">
             <div id="navbarBasicExample" class="navbar-menu is-flex-mobile">
               <div class="navbar-start">
+                <Link to={"/"} class="navbar-item is-tab">
+                  <button class="button is-primary">Home</button>
+                </Link>
                 <Link to={"/creators"} class="navbar-item is-tab">
                   <button class="button is-primary">Creators</button>
                 </Link>
                 <Link to={"/books"} class="navbar-item is-tab">
                   <button class="button is-primary">Books</button>
-                </Link>
-                <Link to={"/resources"} class="navbar-item is-tab">
-                  <button class="button is-primary">Resources</button>
                 </Link>
                 <Link to={"/blogs"} class="navbar-item is-tab">
                   <button class="button is-primary">Blog</button>
@@ -68,16 +67,15 @@ const Main = () => {
           </div> */}
         </nav>
       </article>
-
-      <div class="columns is-multiline is-mobile is-vcentered">
-        <div class="column is-half is-offset-one-quarter">
-          <Link to={"/books"}>
-            <img src={booktitlepage} alt="Book Cover" />
-          </Link>
-        </div>
-      </div>
+      <section>
+        <h1 style={{ textAlign: "left", fontWeight: "bold", fontSize: "40px" }}>
+          Resources
+        </h1>
+        <br></br>
+        <p>Coming Soon!</p>
+      </section>
     </div>
   );
 };
 
-export default Main;
+export default Resources;

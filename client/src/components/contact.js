@@ -1,80 +1,89 @@
 import React from "react";
 import { Link } from "@reach/router";
-import jkeenan from "./jkeenanlogo.jpeg";
-import contact from "./contactus.jpg";
+import bcover from "./COVER.png";
 import "bulma/css/bulma.min.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Contact = () => {
   return (
     <div>
-      <section classname="pageHeader">
-        <Link to="/">
-          <img
-            class="jklogo"
-            src={jkeenan}
-            alt="JKeenan Logo"
-            width="300"
-            height="250"
-            style={{
-              display: "block",
-              marginLeft: "auto",
-              marginRight: "auto",
-            }}
-          />
-        </Link>
-      </section>
-      <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
-          <Link to={"/"} class="navbar-item">
-            <button class="button is-primary">Home</button>
-          </Link>
-          <Link to={"/blogs"} class="navbar-item">
-            <button class="button is-primary">Blogs</button>
-          </Link>
-          <Link to={"/books"} class="navbar-item">
-            <button class="button is-primary">Books</button>
-          </Link>
-          <Link to={"/classes"} class="navbar-item">
-            <button class="button is-primary">Classes</button>
-          </Link>
-          {/* <Link to={"/reviews"} class="navbar-item">
+      <article class="media">
+        <figure class="media-left">
+          <a class="image is-96x96" href="/">
+            <img
+              src={bcover}
+              width="65"
+              height="100"
+              alt="Sensory Series Logo"
+            />
+          </a>
+        </figure>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+          <div class="navbar-menu is-active">
+            <div id="navbarBasicExample" class="navbar-menu is-flex-mobile">
+              <div class="navbar-start">
+                <Link to={"/"} class="navbar-item is-tab">
+                  <button class="button is-primary">Home</button>
+                </Link>
+                <Link to={"/creators"} class="navbar-item is-tab">
+                  <button class="button is-primary">Creators</button>
+                </Link>
+                <Link to={"/books"} class="navbar-item is-tab">
+                  <button class="button is-primary">Books</button>
+                </Link>
+                <Link to={"/resources"} class="navbar-item is-tab">
+                  <button class="button is-primary">Resources</button>
+                </Link>
+                <Link to={"/blogs"} class="navbar-item is-tab">
+                  <button class="button is-primary">Blog</button>
+                </Link>
+                {/* <Link to={"/jessicakeenan/reviews"} class="navbar-item">
             <button class="button is-primary">Therapy Reviews</button>
           </Link> */}
-        </div>
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <div class="icon is-large">
-              <FontAwesomeIcon icon={["fab", "facebook"]} />
-              <a href="https://www.linkedin.com/in/jessica-keenan-918937a3/">
-                <FontAwesomeIcon icon={["fab", "linkedin"]} />
+              </div>
+              <a
+                role="button"
+                class="navbar-burger"
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="navbarBasicExample"
+              >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
               </a>
             </div>
           </div>
-        </div>
-      </div>
+
+          {/* <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="icon is-large">
+                <FontAwesomeIcon icon={["fab", "facebook"]} />
+                <a href="https://www.linkedin.com/in/jessica-keenan-918937a3/">
+                  <FontAwesomeIcon icon={["fab", "linkedin"]} />
+                </a>
+              </div>
+            </div>
+          </div> */}
+        </nav>
+      </article>
       <div class="columns is-multiline is-mobile is-vcentered">
-        <div class="column is-half">
-          <img src={contact} alt="contact icon" />
-        </div>
-        <div class="column is-half">
+        <div class="column is-full">
           <p class="content is-large">
             <strong>EMAIL:</strong>
           </p>
-          <p class="content is-normal">braleyjessica@gmail.com</p>
+          <p class="content is-normal">
+            <a href="mailto:thesensoryseries@gmail.com">
+              thesensoryseries@gmail.com
+            </a>
+          </p>
           <p class="content is-large">
-            <strong>LINKEDIN:</strong>
-            <p class="content is-normal">
-              <a href="https://www.linkedin.com/in/jessica-keenan-918937a3/">
-                Jessica Keenan LinkedIn Page
-              </a>
-            </p>
-            <p class="content is-large">
-              <strong>COMPANY PAGE:</strong>
-            </p>
-            <p class="content is-normal">
-              <a href="https://bdiplayhouse.com">BDI Playhouse Website</a>
-            </p>
+            <strong>INSTAGRAM:</strong>
+          </p>
+          <p class="content is-normal">
+            <a href="https://www.instagram.com/thesensoryseries/">
+              The Sensory Series Instagram Page
+            </a>
           </p>
         </div>
       </div>

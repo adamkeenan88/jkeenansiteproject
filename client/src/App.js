@@ -3,8 +3,9 @@ import { Router } from "@reach/router";
 import Main from "./components/MainPage";
 import Blogs from "./components/blogs";
 import Books from "./components/books";
-import Classes from "./components/classes";
+import Resources from "./components/resources";
 import Contact from "./components/contact";
+import Creators from "./components/creators";
 // import Reviews from "./components/reviews";
 // import Register from "./components/register";
 // import Login from "./components/login";
@@ -21,8 +22,9 @@ function App() {
         <Main path="/" />
         <Blogs path="/blogs" />
         <Books path="/books" />
-        <Classes path="/classes" />
+        <Resources path="/resources" />
         <Contact path="/contact" />
+        <Creators path="/creators" />
         {/* <Reviews path="/jessicakeenan/reviews" />
         <Register path="/jessicakeenan/register" />
         <Login path="/jessicakeenan/login" />
