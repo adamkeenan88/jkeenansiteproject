@@ -43,21 +43,21 @@ const Main = () => {
             </div>
             <div id="Options" class="navbar-menu">
               <div class="navbar-start">
-                <a href={"/creators"} class="navbar-item is-tab">
+                <Link to={"/creators"} class="navbar-item is-tab">
                   <button class="button is-primary">Creators</button>
-                </a>
-                <a href={"/books"} class="navbar-item is-tab">
+                </Link>
+                <Link to={"/books"} class="navbar-item is-tab">
                   <button class="button is-primary">Books</button>
-                </a>
-                <a href={"/resources"} class="navbar-item is-tab">
+                </Link>
+                <Link to={"/resources"} class="navbar-item is-tab">
                   <button class="button is-primary">Resources</button>
-                </a>
-                <a href={"/blogs"} class="navbar-item is-tab">
+                </Link>
+                <Link to={"/blogs"} class="navbar-item is-tab">
                   <button class="button is-primary">Blog</button>
-                </a>
-                <a href={"/contact"} class="navbar-item is-tab">
+                </Link>
+                <Link to={"/contact"} class="navbar-item is-tab">
                   <button class="button is-primary">Contact Us!</button>
-                </a>
+                </Link>
               </div>
             </div>
 
