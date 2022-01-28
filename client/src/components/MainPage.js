@@ -25,7 +25,11 @@ const Main = () => {
           </figure>
         </div>
         <div class="column">
-          <nav class="navbar" role="navigation" aria-label="main navigation">
+          <nav
+            class="navbar is-spaced"
+            role="navigation"
+            aria-label="main navigation"
+          >
             <div class="navbar-brand">
               <div
                 role="button"
@@ -75,8 +79,8 @@ const Main = () => {
         </div>
       </div>
 
-      <div class="columns is-multiline is-mobile is-vcentered">
-        <div class="column is-half is-offset-one-quarter">
+      <div class="columns is-mobile is-vcentered">
+        <div class="column is-half-mobile is-offset-one-quarter">
           <Link to={"/books"}>
             <img src={booktitlepage} alt="Book Cover" />
           </Link>
