@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "@reach/router";
 import bcover from "./COVER.png";
-import booktitlepage from "./HendrixHearsaSoundBookTitle.png";
+import booktitlepage from "./HomePage.png";
 import "bulma/css/bulma.min.css";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -80,7 +80,7 @@ const Main = () => {
       </div>
 
       <div class="columns is-mobile is-vcentered">
-        <div class="column is-half-mobile is-offset-one-quarter">
+        <div class="column">
           <Link to={"/books"}>
             <img src={booktitlepage} alt="Book Cover" />
           </Link>
