@@ -6,6 +6,7 @@ import Books from "./components/books";
 import Resources from "./components/resources";
 import Contact from "./components/contact";
 import Creators from "./components/creators";
+import Blogtemplate from "./components/blogs/blogtemplate";
 // import Reviews from "./components/reviews";
 // import Register from "./components/register";
 // import Login from "./components/login";
@@ -25,6 +26,7 @@ function App() {
         <Resources path="/resources" />
         <Contact path="/contact" />
         <Creators path="/creators" />
+        <Blogtemplate path="/blogone" />
         {/* <Reviews path="/jessicakeenan/reviews" />
         <Register path="/jessicakeenan/register" />
         <Login path="/jessicakeenan/login" />

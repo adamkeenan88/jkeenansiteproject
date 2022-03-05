@@ -97,7 +97,11 @@ const Books = () => {
             write a series of books to highlight children's sensitivity and
             wonder to different sensory input.
           </p>
-          <a href="https://amazon.com/">
+          <a
+            rel="noopener noreferrer"
+            href="https://www.amazon.com/Hendrix-Hears-Sound-Jessica-Keenan-ebook/dp/B09TKFJKD9/ref=sr_1_1?crid=3GDXR1BKQICH1&keywords=hendrix+hear+a+sound&qid=1646440926&sprefix=hendrix+hears+a+sound%2Caps%2C168&sr=8-1"
+            target="_blank"
+          >
             <button class="button is-danger is-rounded">Shop Now!</button>
           </a>
         </div>

@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "@reach/router";
-import bcover from "./COVER.png";
 import "bulma/css/bulma.min.css";
+import bcover from "../COVER.png";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Blogs = () => {
+const BlogTemplate = () => {
   function toggleBurgerMenu() {
     document.querySelector(".navbar-menu").classList.toggle("is-active");
   }
@@ -86,13 +86,10 @@ const Blogs = () => {
           </h1>
           <br></br>
           <p>Coming soon!</p>
-          {/* <Link to={"/blogone"}>
-            <button class="button is-primary">First Blog</button>
-          </Link> */}
         </section>
       </div>
     </div>
   );
 };
 
-export default Blogs;
+export default BlogTemplate;
