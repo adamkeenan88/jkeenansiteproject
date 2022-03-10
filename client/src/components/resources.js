@@ -90,14 +90,14 @@ const Resources = () => {
         <br></br>
         <p>
           Small print sheet:{" "}
-          <a href={smallprint} target="_blank" rel="noopener">
+          <a href={smallprint} target="_blank" rel="noopener noreferrer">
             Open Here
           </a>
         </p>
         <br></br>
         <p>
           Large print sheet:{" "}
-          <a href={largeprint} target="_blank" rel="noopener">
+          <a href={largeprint} target="_blank" rel="noopener noreferrer">
             Open Here
           </a>
         </p>
