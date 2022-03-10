@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "@reach/router";
 import bcover from "./COVER.png";
+import smallprint from "./HHSTSSPrintOutsSmall.pdf";
+import largeprint from "./HHSTSSPrintOutsLarge.pdf";
 import "bulma/css/bulma.min.css";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -46,14 +48,14 @@ const Resources = () => {
             </div>
             <div id="Options" class="navbar-menu">
               <div class="navbar-start">
+                <Link to={"/"} class="navbar-item is-tab">
+                  <button class="button is-primary">Home</button>
+                </Link>
                 <Link to={"/creators"} class="navbar-item is-tab">
                   <button class="button is-primary">Creators</button>
                 </Link>
                 <Link to={"/books"} class="navbar-item is-tab">
                   <button class="button is-primary">Books</button>
-                </Link>
-                <Link to={"/resources"} class="navbar-item is-tab">
-                  <button class="button is-primary">Resources</button>
                 </Link>
                 <Link to={"/blogs"} class="navbar-item is-tab">
                   <button class="button is-primary">Blog</button>
@@ -82,7 +84,23 @@ const Resources = () => {
           Resources
         </h1>
         <br></br>
-        <p>Coming Soon!</p>
+        <h3>
+          <strong>Download The Book Activity Sheet:</strong>
+        </h3>
+        <br></br>
+        <p>
+          Small print sheet:{" "}
+          <a href={smallprint} target="_blank" rel="noopener">
+            Open Here
+          </a>
+        </p>
+        <br></br>
+        <p>
+          Large print sheet:{" "}
+          <a href={largeprint} target="_blank" rel="noopener">
+            Open Here
+          </a>
+        </p>
       </section>
     </div>
   );
