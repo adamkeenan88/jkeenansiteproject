@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "@reach/router";
 import bcover from "./COVER.png";
 import bookcover from "./Hendrix_Hears_a_Sound_Cover.jpeg";
