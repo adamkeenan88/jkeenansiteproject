@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "@reach/router";
 import bcover from "./COVER.png";
 import bookcover from "./Hendrix_Hears_a_Sound_Cover.jpeg";
@@ -9,6 +9,7 @@ const Books = () => {
   function toggleBurgerMenu() {
     document.querySelector(".navbar-menu").classList.toggle("is-active");
   }
+
   return (
     <div>
       <div class="columns is-narrow-mobile">

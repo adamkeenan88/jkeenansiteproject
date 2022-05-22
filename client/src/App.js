@@ -13,6 +13,8 @@ import Blogtemplate from "./components/blogs/blogtemplate";
 // import PostForm from "./components/postform";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
+import LogRocket from "logrocket";
+LogRocket.init("8zfhcs/sensoryserieswebsite");
 
 library.add(fab);
 

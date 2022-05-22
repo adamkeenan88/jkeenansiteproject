@@ -3,6 +3,7 @@ import { Link } from "@reach/router";
 import bcover from "./COVER.png";
 import smallprint from "./HHSTSSPrintOutsSmall.pdf";
 import largeprint from "./HHSTSSPrintOutsLarge.pdf";
+import smallimages from "./smallimages.png";
 import "bulma/css/bulma.min.css";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -87,6 +88,14 @@ const Resources = () => {
         <h3>
           <strong>Download The Book Activity Sheet:</strong>
         </h3>
+        <p>
+          <img
+            src={smallimages}
+            width="30%"
+            height="30%"
+            alt="small print sheet"
+          />
+        </p>
         <br></br>
         <p>
           Small print sheet:{" "}
@@ -94,6 +103,7 @@ const Resources = () => {
             Open Here
           </a>
         </p>
+
         <br></br>
         <p>
           Large print sheet:{" "}
